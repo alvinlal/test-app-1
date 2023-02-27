@@ -34,7 +34,6 @@
   "executionRoleArn": "arn:aws:iam::732313143489:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "volumes": [],
-  "status": "ACTIVE",
   "placementConstraints": [],
   "runtimePlatform": {
     "cpuArchitecture": "X86_64",
