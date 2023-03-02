@@ -13,7 +13,7 @@ export class AppController {
 
   @Get('/test-app-2')
   async getFromTestApp2(): Promise<string> {
-    const res = await axios.get('http://test-app-2.testapp.com/');
+    const res = await axios.get('http://test-app-2.testapp.com:3000/');
     console.log(res.data);
     return res.data;
   }
