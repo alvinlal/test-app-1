@@ -1,10 +1,14 @@
 import { Controller, Get } from '@nestjs/common';
 import axios from 'axios';
 import { AppService } from './app.service';
-
+import { DataSource } from 'typeorm';
+import { InjectDataSource } from '@nestjs/typeorm';
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(
+    @InjectDataSource() private dataSource: DataSource,
+    private readonly appService: AppService,
+  ) {}
 
   @Get('/')
   async getHello(): Promise<string> {
@@ -16,5 +20,11 @@ export class AppController {
     const res = await axios.get('http://test-app-2.testapp.com:3000/');
     console.log(res.data);
     return res.data;
+  }
+
+  @Get('/test-db')
+  async testDb() {
+    const res = await this.dataSource.query('SELECT VERSION()');
+    return res;
   }
 }
