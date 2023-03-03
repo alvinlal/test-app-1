@@ -10,7 +10,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       port: 3306,
       username: 'admin',
       password: 'D&*oBE63%kmthAr%w0Vp',
-      database: 'test-db',
+      database: 'testdb',
       entities: [],
     }),
   ],
