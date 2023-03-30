@@ -4,7 +4,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "Placeholder: GitHub Actions will fill this in"
+        TaskDefinition: "REPLACE_ME"
         LoadBalancerInfo:
           ContainerName: "test-app-1"
           ContainerPort: 3000
