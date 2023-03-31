@@ -6,7 +6,7 @@ import { InjectDataSource } from '@nestjs/typeorm';
 @Controller()
 export class AppController {
   constructor(
-    @InjectDataSource() private dataSource: DataSource,
+    // @InjectDataSource() private dataSource: DataSource,
     private readonly appService: AppService,
   ) {}
 
@@ -24,7 +24,7 @@ export class AppController {
 
   @Get('/test-db')
   async testDb() {
-    const res = await this.dataSource.query('SELECT VERSION()');
-    return res;
+    // const res = await this.dataSource.query('SELECT VERSION()');
+    // return res;
   }
 }
