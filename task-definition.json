@@ -30,7 +30,7 @@
         "logDriver": "awslogs",
         "options": {
           "awslogs-group": "test-app-logs",
-          "awslogs-region": "me-south-1",
+          "awslogs-region": "ap-southeast-2",
           "awslogs-stream-prefix": "test-app-1-service"
         },
         "secretOptions": []
