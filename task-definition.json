@@ -2,7 +2,7 @@
   "containerDefinitions": [
     {
       "name": "test-app-1",
-      "image": "732313143489.dkr.ecr.ap-south-1.amazonaws.com/test-app-1:COMMITID",
+      "image": "732313143489.dkr.ecr.ap-southeast-2.amazonaws.com/test-app-1:COMMITID",
       "cpu": 0,
       "links": [],
       "portMappings": [
